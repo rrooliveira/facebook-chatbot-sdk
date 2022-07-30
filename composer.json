@@ -1,0 +1,21 @@
+{
+    "name": "rrooliveira/facebook-chatbot-sdk",
+    "description": "SDK for Facebook's Chatbot",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "CodeBot\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Rodrigo Ruy Oliveira",
+            "email": "rro.oliveira@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "phpunit/phpunit": "^5.5"
+    }
+}
