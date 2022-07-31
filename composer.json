@@ -5,7 +5,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "CodeBot\\": "src/"
+            "App\\": "src/"
         }
     },
     "authors": [
@@ -15,7 +15,8 @@
         }
     ],
     "require": {
-        "php": ">=7.1"
+        "php": ">=7.1",
+        "guzzlehttp/guzzle": "^7.4"
     },
     "require-dev": {
         "phpunit/phpunit": "^5.5"

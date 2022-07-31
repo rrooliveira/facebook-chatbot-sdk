@@ -2,7 +2,7 @@
 <phpunit bootstrap="./vendor/autoload.php">
     <testsuites>
         <testsuite name="SDK Facebook's Chatbot">
-            <directory>./tests</directory>
+            <directory>./tests/unit</directory>
         </testsuite>
     </testsuites>
 </phpunit>

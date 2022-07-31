@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace CodeBot\Message;
+namespace App\Message;
 
 use PHPUnit\Framework\TestCase;
 

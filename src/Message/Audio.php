@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Message;
 
-class Text implements MessageInterface
+class Audio implements MessageInterface
 {
     private $recipientId;
 
@@ -20,8 +20,12 @@ class Text implements MessageInterface
                 'id' => $this->recipientId
             ],
             'message' => [
-                'text' => $message,
-                'metadata' => 'DEVELOPER_DEFINED_METADATA'
+                'attachment' => [
+                    'type' => 'audio',
+                    'payload' => [
+                        'url' => $message
+                    ]
+                ]
             ]
         ];
     }
