@@ -3,6 +3,7 @@
     <testsuites>
         <testsuite name="SDK Facebook's Chatbot">
             <directory>./tests/unit</directory>
+            <directory>./tests/integration</directory>
         </testsuite>
     </testsuites>
 </phpunit>

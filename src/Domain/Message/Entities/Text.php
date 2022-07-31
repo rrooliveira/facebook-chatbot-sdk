@@ -2,9 +2,11 @@
 
 declare(strict_types=1);
 
-namespace App\Message;
+namespace App\Domain\Message\Entities;
 
-class Image implements MessageInterface
+use App\Domain\Message\Entities\Interfaces\MessageInterface;
+
+class Text implements MessageInterface
 {
     private $recipientId;
 
@@ -20,12 +22,8 @@ class Image implements MessageInterface
                 'id' => $this->recipientId
             ],
             'message' => [
-                'attachment' => [
-                    'type' => 'image',
-                    'payload' => [
-                        'url' => $message
-                    ]
-                ]
+                'text' => $message,
+                'metadata' => 'DEVELOPER_DEFINED_METADATA'
             ]
         ];
     }

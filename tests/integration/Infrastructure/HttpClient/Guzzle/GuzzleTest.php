@@ -1,7 +1,9 @@
 <?php
 
+namespace Infrastructure\HttpClient\Guzzle;
+
+use App\Domain\Message\Entities\Text;
 use App\Infrastructure\HttpClient\Guzzle\Guzzle;
-use App\Message\Text;
 use GuzzleHttp\Exception\ClientException;
 use GuzzleHttp\Exception\GuzzleException;
 use PHPUnit\Framework\TestCase;

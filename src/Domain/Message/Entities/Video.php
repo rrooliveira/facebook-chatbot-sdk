@@ -2,7 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\Message;
+namespace App\Domain\Message\Entities;
+
+use App\Domain\Message\Entities\Interfaces\MessageInterface;
 
 class Video implements MessageInterface
 {

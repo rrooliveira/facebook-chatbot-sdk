@@ -2,9 +2,11 @@
 
 declare(strict_types=1);
 
-namespace App\Message;
+namespace App\Domain\Message\Entities;
 
-class File implements MessageInterface
+use App\Domain\Message\Entities\Interfaces\MessageInterface;
+
+class Audio implements MessageInterface
 {
     private $recipientId;
 
@@ -21,7 +23,7 @@ class File implements MessageInterface
             ],
             'message' => [
                 'attachment' => [
-                    'type' => 'file',
+                    'type' => 'audio',
                     'payload' => [
                         'url' => $message
                     ]

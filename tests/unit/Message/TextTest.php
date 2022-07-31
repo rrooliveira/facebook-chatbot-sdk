@@ -2,8 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\Message;
+namespace Message;
 
+use App\Domain\Message\Entities\Text;
 use PHPUnit\Framework\TestCase;
 
 class TextTest extends TestCase
