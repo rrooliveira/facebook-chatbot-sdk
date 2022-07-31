@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\Domain\Message\Entities;
+namespace ChatBot\Domain\Message\Entities;
 
-use App\Domain\Message\Entities\Interfaces\MessageInterface;
+use ChatBot\Domain\Message\Entities\Interfaces\MessageInterface;
 
 class Text implements MessageInterface
 {

@@ -2,8 +2,8 @@
 
 namespace Infrastructure\HttpClient\Guzzle;
 
-use App\Domain\Message\Entities\Text;
-use App\Infrastructure\HttpClient\Guzzle\Guzzle;
+use ChatBot\Domain\Message\Entities\Text;
+use ChatBot\Infrastructure\HttpClient\Guzzle\Guzzle;
 use GuzzleHttp\Exception\ClientException;
 use GuzzleHttp\Exception\GuzzleException;
 use PHPUnit\Framework\TestCase;

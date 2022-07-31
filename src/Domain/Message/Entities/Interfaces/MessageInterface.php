@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Domain\Message\Entities\Interfaces;
+namespace ChatBot\Domain\Message\Entities\Interfaces;
 
 interface MessageInterface
 {

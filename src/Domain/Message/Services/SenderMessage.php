@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Domain\Message\Services;
+namespace ChatBot\Domain\Message\Services;
 
 class SenderMessage
 {

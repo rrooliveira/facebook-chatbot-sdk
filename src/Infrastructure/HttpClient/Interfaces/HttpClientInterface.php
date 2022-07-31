@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Infrastructure\HttpClient\Interfaces;
+namespace ChatBot\Infrastructure\HttpClient\Interfaces;
 
 use Psr\Http\Message\ResponseInterface;
 

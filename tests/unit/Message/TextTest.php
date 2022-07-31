@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Message;
 
-use App\Domain\Message\Entities\Text;
+use ChatBot\Domain\Message\Entities\Text;
 use PHPUnit\Framework\TestCase;
 
 class TextTest extends TestCase

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\Infrastructure\HttpClient\Guzzle;
+namespace ChatBot\Infrastructure\HttpClient\Guzzle;
 
-use App\Infrastructure\HttpClient\Interfaces\HttpClientInterface;
+use ChatBot\Infrastructure\HttpClient\Interfaces\HttpClientInterface;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\GuzzleException;
 use Psr\Http\Message\ResponseInterface;
