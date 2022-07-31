@@ -15,27 +15,11 @@ class Guzzle implements HttpClientInterface
     private $client;
     private $facebookUri;
 
-//    public function __construct(Client $client)
-//    {
-//        $this->client = $client;
-//
-//        $this->params = new Client(
-//            [
-//                'verify' => false,
-//                'headers' => ['Authorization' => 'Bearer ' . $this->pageAccessToken]
-//            ]
-//        );
-//    }
-
     public function __construct(string $facebookAccessToken)
     {
         $this->generateFacebookUri($facebookAccessToken);
 
-        $this->client = new Client([
-                'verify' => false,
-                //'headers' => ['Authorization' => 'Bearer ' . $this->pageAccessToken]
-            ]
-        );
+        $this->client = new Client(['verify' => false]);
     }
 
     private function generateFacebookUri(string $facebookAccessToken) : void
