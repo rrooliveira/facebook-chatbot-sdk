@@ -29,18 +29,11 @@ class Text implements MessageInterface
 
         return [
             "field" => "messages",
-            "value" => [
-                "sender" => [
-                    "id" => "12334"
-                ],
-                "recipient" => [
-                    "id" => $this->recipientId
-                ],
-                "timestamp" => time(),
-                "message" => [
-                    //"mid" => "test_message_id",
-                    "text" => $message
-                ]
+            "recipient" => [
+                "id" => $this->recipientId
+            ],
+            "message" => [
+                "text" => $message
             ]
         ];
     }
