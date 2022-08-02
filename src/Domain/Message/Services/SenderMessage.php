@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace ChatBot\Domain\Message\Services;
 
 class SenderMessage
@@ -14,19 +16,19 @@ class SenderMessage
         $this->event = $event['entry'][0]['messaging'][0];
     }
 
-    public function getSenderId()
+    public function getSenderId(): int
     {
-        return $this->event['sender']['id'] ?? null;
+        return $this->event['sender']['id'];
     }
 
-    public function getMessage()
+    public function getMessage(): int
     {
-        return $this->event['message']['text'] ?? null;
+        return $this->event['message']['text'];
     }
 
-    public function getRecipientId()
+    public function getRecipientId(): int
     {
-        return $this->event['recipient']['id'] ?? null;
+        return $this->event['recipient']['id'];
     }
 
     public function getPostBack()

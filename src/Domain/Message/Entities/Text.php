@@ -10,7 +10,7 @@ class Text implements MessageInterface
 {
     private $recipientId;
 
-    public function __construct($recipientId)
+    public function __construct(int $recipientId)
     {
         $this->recipientId = $recipientId;
     }

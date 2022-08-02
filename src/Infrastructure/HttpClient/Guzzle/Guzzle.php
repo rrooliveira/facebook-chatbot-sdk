@@ -40,7 +40,7 @@ class Guzzle implements HttpClientInterface
      */
     public function post(array $options = []): ResponseInterface
     {
-        return $this->client->post($this->facebookUri, $options);
+        return $this->client->post($this->facebookUri, ['json' => $options]);
     }
 
     /**
@@ -48,6 +48,6 @@ class Guzzle implements HttpClientInterface
      */
     public function put(array $options = []): ResponseInterface
     {
-        return $this->client->put($this->facebookUri, $options);
+        return $this->client->put($this->facebookUri, ['json' => $options]);
     }
 }
