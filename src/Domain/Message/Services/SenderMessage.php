@@ -18,17 +18,17 @@ class SenderMessage
 
     public function getSenderId(): int
     {
-        return $this->event['sender']['id'];
+        return (int)$this->event['sender']['id'];
     }
 
-    public function getMessage(): int
+    public function getMessage(): string
     {
         return $this->event['message']['text'];
     }
 
     public function getRecipientId(): int
     {
-        return $this->event['recipient']['id'];
+        return (int)$this->event['recipient']['id'];
     }
 
     public function getPostBack()
