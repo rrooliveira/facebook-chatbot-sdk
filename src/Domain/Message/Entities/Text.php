@@ -6,23 +6,16 @@ namespace ChatBot\Domain\Message\Entities;
 
 use ChatBot\Domain\Message\Entities\Interfaces\MessageInterface;
 
-class Text implements MessageInterface
+class Text extends MessageAbstract implements MessageInterface
 {
-    private $recipientId;
-
-    public function __construct(int $recipientId)
-    {
-        $this->recipientId = $recipientId;
-    }
-
-    public function message(string $message): array
+    public function getMessage(): array
     {
         return [
             'recipient' => [
                 'id' => $this->recipientId
             ],
             'message' => [
-                'text' => $message,
+                'text' => $this->message,
             ]
         ];
     }

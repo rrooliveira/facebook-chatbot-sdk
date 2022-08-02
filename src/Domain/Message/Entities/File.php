@@ -6,16 +6,9 @@ namespace ChatBot\Domain\Message\Entities;
 
 use ChatBot\Domain\Message\Entities\Interfaces\MessageInterface;
 
-class File implements MessageInterface
+class File extends MessageAbstract implements MessageInterface
 {
-    private $recipientId;
-
-    public function __construct($recipientId)
-    {
-        $this->recipientId = $recipientId;
-    }
-
-    public function message(string $message): array
+    public function getMessage(): array
     {
         return [
             'recipient' => [
@@ -25,7 +18,7 @@ class File implements MessageInterface
                 'attachment' => [
                     'type' => 'file',
                     'payload' => [
-                        'url' => $message
+                        'url' => $this->message
                     ]
                 ]
             ]
