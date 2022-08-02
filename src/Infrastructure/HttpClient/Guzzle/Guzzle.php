@@ -11,7 +11,7 @@ use Psr\Http\Message\ResponseInterface;
 
 class Guzzle implements HttpClientInterface
 {
-    const FACEBOOK_URL = 'https://graph.facebook.com/v2.6/me/messages?';
+    const FACEBOOK_URL = 'https://graph.facebook.com/v14.0/me/messages?access_token=';
     private $client;
     private $facebookUri;
 
