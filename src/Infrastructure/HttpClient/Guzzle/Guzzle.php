@@ -32,7 +32,6 @@ class Guzzle implements HttpClientInterface
      */
     public function get(array $options = []): ResponseInterface
     {
-
         return $this->client->get($this->facebookUri, $options);
     }
 

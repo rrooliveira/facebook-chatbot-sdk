@@ -17,23 +17,12 @@ class Text implements MessageInterface
 
     public function message(string $message): array
     {
-//        return [
-//            'recipient' => [
-//                'id' => $this->recipientId
-//            ],
-//            'message' => [
-//                'text' => $message,
-//                'metadata' => 'DEVELOPER_DEFINED_METADATA'
-//            ]
-//        ];
-
         return [
-            "field" => "messages",
-            "recipient" => [
-                "id" => $this->recipientId
+            'recipient' => [
+                'id' => $this->recipientId
             ],
-            "message" => [
-                "text" => $message
+            'message' => [
+                'text' => $message,
             ]
         ];
     }
