@@ -18,7 +18,8 @@ class Image extends MessageAbstract implements MessageInterface
                 'attachment' => [
                     'type' => 'image',
                     'payload' => [
-                        'url' => $this->message
+                        'url' => $this->message,
+                        'is_reusable' => true
                     ]
                 ]
             ]

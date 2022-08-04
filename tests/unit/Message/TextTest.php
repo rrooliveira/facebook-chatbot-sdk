@@ -16,7 +16,8 @@ class TextTest extends TestCase
     public function shouldReturnAnArrayElement()
     {
         $text = new Text(1);
-        $actual = $text->message('Hello World!');
+        $text->setMessage('Hello World!');
+        $actual = $text->getMessage();
 
         $expected = [
             'recipient' => [
@@ -24,7 +25,7 @@ class TextTest extends TestCase
             ],
             'message' => [
                 'text' => 'Hello World!',
-                'metadata' => 'DEVELOPER_DEFINED_METADATA'
+                'is_reusable' => true
             ]
         ];
 

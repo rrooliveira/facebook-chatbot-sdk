@@ -18,7 +18,8 @@ class Video extends MessageAbstract implements MessageInterface
                 'attachment' => [
                     'type' => 'video',
                     'payload' => [
-                        'url' => $this->message
+                        'url' => $this->message,
+                        'is_reusable' => true
                     ]
                 ]
             ]

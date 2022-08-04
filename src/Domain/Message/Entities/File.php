@@ -18,7 +18,8 @@ class File extends MessageAbstract implements MessageInterface
                 'attachment' => [
                     'type' => 'file',
                     'payload' => [
-                        'url' => $this->message
+                        'url' => $this->message,
+                        'is_reusable' => true
                     ]
                 ]
             ]

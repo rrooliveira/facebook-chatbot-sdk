@@ -18,7 +18,8 @@ class Audio extends MessageAbstract implements MessageInterface
                 'attachment' => [
                     'type' => 'audio',
                     'payload' => [
-                        'url' => $this->message
+                        'url' => $this->message,
+                        'is_reusable' => true
                     ]
                 ]
             ]
