@@ -15,8 +15,7 @@ class Text extends MessageAbstract implements MessageInterface
                 'id' => $this->recipientId
             ],
             'message' => [
-                'text' => $this->message,
-                //'is_reusable' => true
+                'text' => $this->message
             ]
         ];
     }

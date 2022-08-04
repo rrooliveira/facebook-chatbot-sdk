@@ -24,8 +24,7 @@ class TextTest extends TestCase
                 'id' => 1
             ],
             'message' => [
-                'text' => 'Hello World!',
-                'is_reusable' => true
+                'text' => 'Hello World!'
             ]
         ];
 
